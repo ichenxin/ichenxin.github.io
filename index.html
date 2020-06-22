@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="description" content="Shadowrocket" />
+	<meta name="keywords" content="Shadowrocket" />
+	<title>Shadowrocket</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/my.css" />
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+			<div class="topbread" style="margin-bottom: 20px;">
+		    	<div class="container">
+		        	<h1 class="text-center">Shadowrocket</h1>
+		    	</div>
+			</div>
+			<div style="margin-top:70px; margin-bottom: 20px;">
+		        <div style="text-align:center;">
+		  			<div class="polaroid">
+                        <div class="logo">
+                            <img src="/assets/images/icon.jpg" class="img-circle" width="120" height="120" />
+                        </div>
+                    </div>
+		            <ul class="breadcrumb" id="ul">
+		                <li>Version: 2.1.31</li>
+		            	<li>Size: 25.4 MB</li>
+					</ul>
+		            <div style="padding-top:20px;">
+                        <div class="id" id="id" style="display:none;">
+							<div class="panel panel-default">
+								<div class="panel-body" style="text-align:left;">
+        							<p>首次进行安装请使用提供的账号登录。</p>
+                                    <p>账号：319@aliyun.com</p>
+                                    <p>密码：HKvpn20yuan</p>
+								</div>
+							</div>
+                      	</div>
+		                <span id="checkinfo">
+		                    <a href="itms-services://?action=download-manifest&url=https://shadowrocket.ssss.hk/shadowrocket%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%851/ipa.plist" class="btn btn-success btn-lg btn-circle" id="uaApp">安装1⃣️</a>
+		                    <div class="uatip" id="uaTip">
+								<span class="uatip-icon"></span>
+								<p class="uatip-txt">点击右上角<br/>选择在Safari中打开</p>
+							</div>
+		                </span>
+		            </div>
+		        </div>
+                <br/>
+			</div>
+          <div class="col-md-8 col-md-offset-2">
+		        <hr class="devider devider-dotted">
+		    </div>
+	        <div class="col-md-8 col-md-offset-2">
+	            <div class="text-center">
+                  <p>点击安装之后会自动进行安装
+                  <p>可以回到桌面查看安装进度
+                  <p>如无法安装请尝试安装2⃣️
+                  <p>===================
+                  <p>首次打开app需要输入Apple id和密码进行验证
+                  <p>输入页面提供的ID和密码即可进行验证
+                  <p>请勿多次输错密码
+              </div>
+	        </div>
+        </div>
+    </div>
+<script type="text/javascript" src="/assets/js/jquery-1.7.2.min.js"></script>
+<script>
+	function weixinTip(ele){
+		var ua = navigator.userAgent;
+		var Browser = /Safari/.test(ua) && !/Chrome/.test(ua);
+		if(Browser == 0){
+			ele.onclick=function(e){
+				window.event? window.event.returnValue = false : e.preventDefault();
+				document.getElementById('uaTip').style.display='block';
+			}
+		} else {
+			$("#uaApp").click(function () {
+				$("#uaApp").attr("style","display:none;");
+                $("#ul").attr("style","display:none;");
+                $("#id").attr("style","display:block;");
+            });
+        }
+	}
+	var btn1 = document.getElementById('uaApp');
+	weixinTip(btn1);
+</script>
+</body>
+</html>
