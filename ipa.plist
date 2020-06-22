@@ -10,7 +10,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>https://shadowrocket.ssss.hk/shadowrocket%E5%9C%A8%E7%BA%BF%E5%AE%89%E8%A3%851/Shadowrocket%202.1.31.ipa</string>
+                        <string>https://github-production-release-asset-2e65be.s3.amazonaws.com/238910951/df102180-b46e-11ea-9218-79b91975f1f8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200622%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200622T030116Z&X-Amz-Expires=300&X-Amz-Signature=c0639f1efb66f25a821e769f0131ca9e54ba0a4c3927910848c44e4987582aab&X-Amz-SignedHeaders=host&actor_id=45142942&repo_id=238910951&response-content-disposition=attachment%3B%20filename%3D4.22.0.ipa&response-content-type=application%2Foctet-stream</string>
                     </dict>
                 </array>
                 <key>metadata</key>
